@@ -38,19 +38,20 @@ public class Mother {
         }
     }
     private int numberOfBabies = 0;
-    private LinkedList<Baby> listOfBabies;    
+    private LinkedList<Baby> listOfBabies = new LinkedList<Baby>();    
     /** Constructor of Mother
      * @param newNumberOfBabies
      */
-    public Mother (int newNumberOfBabies) throws InterruptedException{
+    public Mother (int newNumberOfBabies) throws InterruptedException {
         numberOfBabies = newNumberOfBabies;
-        for(int currentBaby = 0;currentBaby<numberOfBabies;currentBaby++){
+        for( int currentBaby = 0; currentBaby < numberOfBabies; currentBaby++ ){
             Baby cB = new Baby();
             cB.increaseWeight();
             cB.increaseAge();
             listOfBabies.add(cB);
         }
     }
+    
     public LinkedList<Baby> getListOfBabies() {
         return listOfBabies;
     }
