@@ -13,7 +13,7 @@ public class TestNestedClass {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("First test Nested Class 6");
+        System.out.println("First test Nested Class 5");
     }
     
 }
